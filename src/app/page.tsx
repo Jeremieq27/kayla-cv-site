@@ -33,7 +33,7 @@ export default function Page() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            "The future belongs to those who craft it with intention."
+            &ldquo;The future belongs to those who craft it with intention.&rdquo;
           </motion.h1>
           <p className="subtle max-w-2xl">
             A minimalist, single-page CV for quick navigation and deep dives when desired.
