@@ -122,11 +122,81 @@ export default function Page() {
           <h2 className="h2">Correspondence</h2>
           <div className="card p-6">
             <p className="subtle mb-4">Get in touch</p>
-            <form className="grid gap-3 max-w-xl">
-              <input className="bg-black/40 border border-zinc-800 rounded-xl px-4 py-3" placeholder="Your name" />
-              <input className="bg-black/40 border border-zinc-800 rounded-xl px-4 py-3" placeholder="Email" type="email" />
-              <textarea className="bg-black/40 border border-zinc-800 rounded-xl px-4 py-3" placeholder="Message" rows={5} />
-              <button className="btn justify-center">Send</button>
+
+            <form
+              className="grid gap-3 max-w-xl"
+              onSubmit={async (e) => {
+                e.preventDefault();
+                const form = e.currentTarget as HTMLFormElement;
+                const submitBtn = form.querySelector("button[type='submit']") as HTMLButtonElement | null;
+                const data = new FormData(form);
+
+                // Disable button while submitting
+                if (submitBtn) {
+                  submitBtn.disabled = true;
+                  submitBtn.textContent = "Sending…";
+                }
+
+                try {
+                  const res = await fetch("/api/contact", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                      name: data.get("name"),
+                      email: data.get("email"),
+                      message: data.get("message"),
+                      honey: data.get("honey"), // honeypot
+                    }),
+                  });
+
+                  const json = await res.json();
+
+                  if (res.ok && json.ok) {
+                    alert("Thanks! Your message was sent.");
+                    form.reset();
+                  } else {
+                    alert(json?.error || "There was an error. Please try again.");
+                  }
+                } catch {
+                  alert("Network error. Please try again.");
+                } finally {
+                  if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = "Send";
+                  }
+                }
+              }}
+            >
+              {/* Honeypot field (hidden from humans, visible to bots) */}
+              <input
+                type="text"
+                name="honey"
+                tabIndex={-1}
+                autoComplete="off"
+                className="hidden"
+              />
+
+              <input
+                name="name"
+                className="bg-black/40 border border-zinc-800 rounded-xl px-4 py-3"
+                placeholder="Your name"
+                required
+              />
+              <input
+                name="email"
+                className="bg-black/40 border border-zinc-800 rounded-xl px-4 py-3"
+                placeholder="Email"
+                type="email"
+                required
+              />
+              <textarea
+                name="message"
+                className="bg-black/40 border border-zinc-800 rounded-xl px-4 py-3"
+                placeholder="Message"
+                rows={5}
+                required
+              />
+              <button type="submit" className="btn justify-center">Send</button>
             </form>
           </div>
         </div>
