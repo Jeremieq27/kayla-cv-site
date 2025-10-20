@@ -33,10 +33,10 @@ export default function Page() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            &ldquo;The future belongs to those who craft it with intention.&rdquo;
+            &ldquo;In a world where ideas travel faster than consent, the law is not a cage for creativity — it is the agreement that makes creation worth the risk.&rdquo;
           </motion.h1>
           <p className="subtle max-w-2xl">
-            A minimalist, single-page CV for quick navigation and deep dives when desired.
+            Kayla Marie Scullin JD, MA, MA, BA
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
