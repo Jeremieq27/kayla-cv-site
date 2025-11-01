@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kayla Scullin — CV",
-  description: "Futuristic one-page CV for Kayla Scullin (Web2 + Web3 deploy)",
+  title: "Kayla Scullin",
+  description: "Boston based Attorney specializing in Art, Copyright, and IP",
 };
 
 export default function RootLayout({
