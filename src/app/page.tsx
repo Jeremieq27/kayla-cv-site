@@ -36,7 +36,7 @@ export default function Page() {
             &ldquo;In a world where ideas travel faster than consent, the law is not a cage for creativity — it is the agreement that makes creation worth the risk.&rdquo;
           </motion.h1>
           <p className="subtle max-w-2xl">
-            Kayla Marie Scullin JD, MA, MA, BA
+            Kayla Scullin JD, MA, MA, BA
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
