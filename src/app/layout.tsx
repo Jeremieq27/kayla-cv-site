@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Kayla Scullin",
-  description: "Boston based Attorney specializing in Art, Copyright, and IP",
+  description: "Boston based Legal Researcher specializing in Art, Copyright, and IP",
 };
 
 export default function RootLayout({
