@@ -39,7 +39,7 @@ export default function Page() {
             transition={{ duration: 0.6 }}
           >
             &ldquo;In a world where ideas travel faster than consent, the law is
-            not a cage for creativity — it is the agreement that makes creation
+            not a cage for creativity -it is the agreement that makes creation
             worth the risk.&rdquo;
           </motion.h1>
           <div className="flex justify-center">
@@ -71,7 +71,7 @@ export default function Page() {
                 they take through time. My background spans art history,
                 archaeology, the art market, and most recently — intellectual
                 property law. What holds my attention the most are questions of
-                provenance, authorship, and cultural responsibility — how
+                authorship, provenance, and cultural responsibility — how
                 meaning, ownership, and memory are protected and contested. I
                 often dissapear into research tangents or creating.
               </p>
@@ -82,11 +82,11 @@ export default function Page() {
               <p className="subtle mb-1">Highlights</p>
               <ul className="space-y-2 text-white/80">
                 <li>
-                  New England Law · Concentrated Study: Intellectual Property Law
+                  New England Law | Boston · Concentrated Study: Intellectual Property Law
                   Certificate
                 </li>
                 <li>
-                  New England Law · Activities and Societies: Art and Fashion
+                  New England Law | Boston · Activities and Societies: Art and Fashion
                   Law Society, Intellectual Property Law Association. Study
                   Abroad Program: Galway, Ireland · International Criminal Law
                   and War Crimes
@@ -117,7 +117,7 @@ export default function Page() {
                 <p className="subtle mb-1">Education</p>
                 <ul className="space-y-2">
                   <li>
-                    <strong>New England Law · J.D.</strong> · 2021-2025
+                    <strong>New England Law | Boston · J.D.</strong> · 2021-2025
                   </li>
                   <li>
                     <strong>Sotheby’s Institute of Art · M.A., Art Business</strong>{" "}
@@ -149,7 +149,7 @@ export default function Page() {
                     · 2025-Present
                   </li>
                   <li>
-                    <strong>New England Law · Research Assistant</strong> ·
+                    <strong>New England Law | Boston · Research Assistant</strong> ·
                     2024-2025
                   </li>
                   <li>
@@ -179,12 +179,10 @@ export default function Page() {
             <div className="card p-6">
               <p className="subtle mb-1">Current Interests</p>
               <ul className="space-y-2 text-white/80">
-                <li>Art provenance</li>
+                <li>Art Provenance</li>
                 <li>Baroque, Pop Surrealism, Art Nouveau</li>
-                <li>
-                  Running with my partner or our puppy, Saoirse (a Carolina Husky
-                  mix)
-                </li>
+                <li>The use of technology in archeology and cultural heritage preservation</li>
+                <li>Running with my partner or our puppy, Saoirse (a Carolina Huskymix)</li>
                 <li>
                   Reading, crocheting, baking, tinctures, and painting (acrylic,
                   oil, watercolor, and more)
@@ -200,7 +198,7 @@ export default function Page() {
         <div className="container grid gap-6">
           <h2 className="h2">Correspondence</h2>
           <div className="card p-6">
-            <p className="subtle mb-4">Get in touch</p>
+            <p className="subtle mb-4">Get in touch if you want to talk about art, law, or just to say hello & connect.  Always open for interesting conversations & projects.</p>
 
             <form
               className="grid gap-3 max-w-xl"

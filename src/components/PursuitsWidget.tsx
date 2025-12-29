@@ -84,6 +84,30 @@ const pursuitsSeed: Pursuit[] = [
         { src: "/pursuits/castIronFernTable1.jpg", alt: "Cast Iron Fern Table" }
       ],
     },
+  },
+  {
+    id: "Central Street Studios",
+    title: "Central Street Studios",
+    subtitle: "Studio Artist",
+    shortDescription:
+      "Central Street Studios is a historic artist workspace in Somerville, MA.  Featuring 25 studios over four floors & 6600 square feet, CSS provides affordable workspaces for artists including illustrators, sculptors, floral artists, jewelry makers, printers, musicians, painters, photographers, video installation artists, literary artists, fiber artists, and more.",
+    previewImage: {
+      src: "/pursuits/centralStreetStudio.jpg",
+      alt: "Central Street Studios",
+    },
+    details: {
+      overview:
+        "I've been getting back into lino printmaking. I recently bought some water soluable oil paints; that'll be my next learning endevor. If you have experience in water-oil paint, or alternative printmaking methods, send me a message.",
+      bullets: [
+        "Project Website: https://centralstreetstudios.org/",
+      ],
+      nextSteps: [
+        "Project Website: https://centralstreetstudios.org/"
+      ],
+      gallery: [
+        { src: "/pursuits/centralStreetStudio.jpg", alt: "Central Street Studios" }
+      ],
+    },
   }
 
 ];
