@@ -49,9 +49,10 @@ const pursuitsSeed: Pursuit[] = [
 
       ],
       nextSteps: [
+        "Central Contact Point: Comprehensive database"
       ],
       gallery: [
-        { src: "/pursuits/lootedArtRestitutionProject1.jpeg", alt: "Looted Art Restitution Project" }
+        { src: "/pursuits/lootedArtResitutionProject1.jpeg", alt: "Looted Art Restitution Project" }
       ],
     },
   },
@@ -84,7 +85,7 @@ const pursuitsSeed: Pursuit[] = [
       ],
     },
   }
-  
+
 ];
 
 // =====================

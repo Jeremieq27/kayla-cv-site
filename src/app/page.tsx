@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, NotebookPen, Sparkles, User2 } from "lucide-react";
-import { PursuitsWidget } from "@/components/PursuitsWidget"; //
+import { PursuitsWidget } from "@/components/PursuitsWidget";
 
 const links = [
   { href: "#kayla", label: "Kayla Scullin", icon: User2 },
@@ -16,10 +16,14 @@ export default function Page() {
       {/* Sticky Navigation */}
       <header className="sticky top-0 z-50 border-b border-zinc-800/70 bg-black/30 backdrop-blur-md">
         <div className="container flex items-center justify-between py-3">
-          <a href="#hero" className="navlink font-medium">Kayla Scullin</a>
+          <a href="#hero" className="navlink font-medium">
+            Kayla Scullin
+          </a>
           <nav className="hidden md:flex gap-6">
             {links.map(({ href, label }) => (
-              <a key={href} href={href} className="navlink">{label}</a>
+              <a key={href} href={href} className="navlink">
+                {label}
+              </a>
             ))}
           </nav>
         </div>
@@ -34,16 +38,18 @@ export default function Page() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            &ldquo;In a world where ideas travel faster than consent, the law is not a cage for creativity — it is the agreement that makes creation worth the risk.&rdquo;
+            &ldquo;In a world where ideas travel faster than consent, the law is
+            not a cage for creativity — it is the agreement that makes creation
+            worth the risk.&rdquo;
           </motion.h1>
-          <p className="subtle max-w-2xl">
-            Kayla Scullin JD, MA, MA, BA
-          </p>
+          <p className="subtle max-w-2xl">Kayla Scullin JD, MA, MA, BA</p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {links.map(({ href, label, icon: Icon }) => (
               <a key={href} href={href} className="card btn justify-between">
-                <span className="flex items-center gap-3"><Icon size={18} /> {label}</span>
+                <span className="flex items-center gap-3">
+                  <Icon size={18} /> {label}
+                </span>
                 <ArrowRight size={18} />
               </a>
             ))}
@@ -58,16 +64,42 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="card p-6">
               <p className="subtle mb-2">Profile</p>
-              <p>I work at the intersection of art, history, and law, -drawn to the stories that objects/works/artifacts carry and the paths they take through time.  My background spans art history, archaeology, the art market, and most recently -intellectual property law.  What holds my attention the most are questions of provenance, authorship, and cultural responsibility -How meaning, ownership, and memory are protected and contested.  
-                I often dissapear into research tangents or creating.</p>
+              <p>
+                I work at the intersection of art, history, and law, drawn to
+                the stories that objects/works/artifacts carry and the paths
+                they take through time. My background spans art history,
+                archaeology, the art market, and most recently — intellectual
+                property law. What holds my attention the most are questions of
+                provenance, authorship, and cultural responsibility — how
+                meaning, ownership, and memory are protected and contested. I
+                often dissapear into research tangents or creating.
+              </p>
             </div>
+
+            {/* UPDATED: Highlights formatting (no bullets, spaced like Education/Experience) */}
             <div className="card p-6">
-              <p className="subtle mb-2">Highlights</p>
-              <ul className="list-disc list-inside space-y-3">
-                <li>New Enland Law · Concentrated Study: Intellectual Property Law Certificate</li>
-                <li>New Enland Law · Activities and Societies: Art and Fashion Law Society. Intellectual Property Law Association.
-                Study Abroad Program: Galway, Ireland · International Criminal Law and War Crimes</li>
-                <li>https://www.linkedin.com/in/kaylascullin/</li>
+              <p className="subtle mb-1">Highlights</p>
+              <ul className="space-y-2 text-white/80">
+                <li>
+                  New England Law · Concentrated Study: Intellectual Property Law
+                  Certificate
+                </li>
+                <li>
+                  New England Law · Activities and Societies: Art and Fashion
+                  Law Society, Intellectual Property Law Association. Study
+                  Abroad Program: Galway, Ireland · International Criminal Law
+                  and War Crimes
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/kaylascullin/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline underline-offset-4 hover:text-white"
+                  >
+                    linkedin.com/in/kaylascullin
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -82,20 +114,49 @@ export default function Page() {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <p className="subtle mb-1">Education</p>
-                <ul className="space-y-5">
-                  <li><strong>New England Law · J.D.</strong> · 2021-2025</li>
-                  <li><strong>Sotheby's Institute of Art · M.A., Art Business</strong> · 2017-2018</li>
-                  <li><strong>King's College London · M.A., Classical Art And Archeology</strong> · 2016-2017</li>
-                  <li><strong>Pratt Institute · B.A., Art History and Cinema Studies</strong> · 2012-2015</li>
-                  <li><strong>Massachusetts College of Art and Design</strong> · 2009-2011</li>
+                <ul className="space-y-2">
+                  <li>
+                    <strong>New England Law · J.D.</strong> · 2021-2025
+                  </li>
+                  <li>
+                    <strong>Sotheby’s Institute of Art · M.A., Art Business</strong>{" "}
+                    · 2017-2018
+                  </li>
+                  <li>
+                    <strong>
+                      King’s College London · M.A., Classical Art And Archeology
+                    </strong>{" "}
+                    · 2016-2017
+                  </li>
+                  <li>
+                    <strong>
+                      Pratt Institute · B.A., Art History and Cinema Studies
+                    </strong>{" "}
+                    · 2012-2015
+                  </li>
+                  <li>
+                    <strong>Massachusetts College of Art and Design</strong> ·
+                    2009-2011
+                  </li>
                 </ul>
               </div>
               <div>
                 <p className="subtle mb-1">Experience</p>
-                <ul className="space-y-3">
-                  <li><strong>Looted Art Restitution Project · Researcher</strong> · 2025-Present</li>
-                  <li><strong>New England Law · Research Assistant</strong> · 2024-2025</li>
-                  <li><strong>Institute of Contemporary Art Boston · VA Lead</strong> · 2021-2024</li>
+                <ul className="space-y-2">
+                  <li>
+                    <strong>Looted Art Restitution Project · Researcher</strong>{" "}
+                    · 2025-Present
+                  </li>
+                  <li>
+                    <strong>New England Law · Research Assistant</strong> ·
+                    2024-2025
+                  </li>
+                  <li>
+                    <strong>
+                      Institute of Contemporary Art Boston · VA Lead
+                    </strong>{" "}
+                    · 2021-2024
+                  </li>
                 </ul>
               </div>
             </div>
@@ -110,17 +171,24 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="card p-6">
               <p className="subtle mb-2">Currently working on</p>
-
-              {/* ✅ Replaces your bullet list */}
               <PursuitsWidget />
             </div>
 
+            {/* UPDATED: Current Interests formatting (spaced list, no bold, no bullets) */}
             <div className="card p-6">
-              <p className="subtle mb-4">Current Interests</p>
-              <p>Art Provenance</p>
-              <p>Baroque, Pop Surrealism, Art Nouveau</p>
-              <p>Running with my Partner or Puppy, Saoirse (She is a Carolina Husky mix)</p>
-              <p>Reading, Crocheting, Baking, Tinctures, Painting: Acrylic, Oil, Watercolor, and other mediums</p>
+              <p className="subtle mb-1">Current Interests</p>
+              <ul className="space-y-2 text-white/80">
+                <li>Art provenance</li>
+                <li>Baroque, Pop Surrealism, Art Nouveau</li>
+                <li>
+                  Running with my partner or our puppy, Saoirse (a Carolina Husky
+                  mix)
+                </li>
+                <li>
+                  Reading, crocheting, baking, tinctures, and painting (acrylic,
+                  oil, watercolor, and more)
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -138,7 +206,9 @@ export default function Page() {
               onSubmit={async (e) => {
                 e.preventDefault();
                 const form = e.currentTarget as HTMLFormElement;
-                const submitBtn = form.querySelector("button[type='submit']") as HTMLButtonElement | null;
+                const submitBtn = form.querySelector(
+                  "button[type='submit']"
+                ) as HTMLButtonElement | null;
                 const data = new FormData(form);
 
                 if (submitBtn) {
@@ -204,7 +274,9 @@ export default function Page() {
                 rows={5}
                 required
               />
-              <button type="submit" className="btn justify-center">Send</button>
+              <button type="submit" className="btn justify-center">
+                Send
+              </button>
             </form>
           </div>
         </div>
