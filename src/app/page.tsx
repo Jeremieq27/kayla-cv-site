@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, NotebookPen, Sparkles, User2 } from "lucide-react";
+import { PursuitsWidget } from "@/components/PursuitsWidget"; //
 
 const links = [
   { href: "#kayla", label: "Kayla Scullin", icon: User2 },
@@ -103,13 +104,13 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="card p-6">
               <p className="subtle mb-2">Currently working on</p>
-              <ul className="list-disc list-inside space-y-1">
-                <li>Project A — brief description</li>
-                <li>Project B — brief description</li>
-              </ul>
+
+              {/* ✅ Replaces your bullet list */}
+              <PursuitsWidget />
             </div>
+
             <div className="card p-6">
-              <p className="subtle mb-2">Interests</p>
+              <p className="subtle mb-2">Current Interests</p>
               <p>Topical/academic interests that guide present work.</p>
             </div>
           </div>
@@ -131,7 +132,6 @@ export default function Page() {
                 const submitBtn = form.querySelector("button[type='submit']") as HTMLButtonElement | null;
                 const data = new FormData(form);
 
-                // Disable button while submitting
                 if (submitBtn) {
                   submitBtn.disabled = true;
                   submitBtn.textContent = "Sending…";
@@ -145,7 +145,7 @@ export default function Page() {
                       name: data.get("name"),
                       email: data.get("email"),
                       message: data.get("message"),
-                      honey: data.get("honey"), // honeypot
+                      honey: data.get("honey"),
                     }),
                   });
 
@@ -167,7 +167,6 @@ export default function Page() {
                 }
               }}
             >
-              {/* Honeypot field (hidden from humans, visible to bots) */}
               <input
                 type="text"
                 name="honey"
