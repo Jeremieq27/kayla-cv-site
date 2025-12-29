@@ -52,7 +52,7 @@ const pursuitsSeed: Pursuit[] = [
         "Wax"
       ],
       gallery: [
-        { src: "/pursuits/castIronFernTable.jpg", alt: "Cast Iron Fern Table" }
+        { src: "/pursuits/castIronFernTable.jpeg", alt: "Cast Iron Fern Table" }
       ],
     },
   },
