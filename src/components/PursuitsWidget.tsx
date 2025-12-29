@@ -34,7 +34,7 @@ const pursuitsSeed: Pursuit[] = [
     shortDescription:
       "Victorian Cast Iron Plant or Fern Stand, likely dating from the 1880s to the 1890s.",
     previewImage: {
-      src: "/pursuits/castIronFernTable.jpeg",
+      src: "/pursuits/castIronFernTable1.jpg",
       alt: "Cast Iron Fern Table",
     },
     details: {
@@ -52,7 +52,7 @@ const pursuitsSeed: Pursuit[] = [
         "Wax"
       ],
       gallery: [
-        { src: "/pursuits/castIronFernTable.jpeg", alt: "Cast Iron Fern Table" }
+        { src: "/pursuits/castIronFernTable1.jpg", alt: "Cast Iron Fern Table" }
       ],
     },
   },
