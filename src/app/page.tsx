@@ -1,10 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, NotebookPen, Sparkles, User2 } from "lucide-react";
+import { Mail, NotebookPen, Sparkles, User2 } from "lucide-react";
 import { PursuitsWidget } from "@/components/PursuitsWidget";
 
 const links = [
-  { href: "#kayla", label: "Kayla Scullin", icon: User2 },
+  { href: "#about", label: "About Me", icon: User2 },
   { href: "#curriculum", label: "Curriculum", icon: NotebookPen },
   { href: "#pursuits", label: "Pursuits", icon: Sparkles },
   { href: "#correspondence", label: "Correspondence", icon: Mail },
@@ -42,25 +42,26 @@ export default function Page() {
             not a cage for creativity — it is the agreement that makes creation
             worth the risk.&rdquo;
           </motion.h1>
-          <p className="subtle max-w-2xl">Kayla Scullin JD, MA, MA, BA</p>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {links.map(({ href, label, icon: Icon }) => (
-              <a key={href} href={href} className="card btn justify-between">
-                <span className="flex items-center gap-3">
-                  <Icon size={18} /> {label}
-                </span>
-                <ArrowRight size={18} />
-              </a>
-            ))}
+          <div className="flex justify-center">
+          <div className="relative h-40 w-40 md:h-48 md:w-48 rounded-full overflow-hidden border border-zinc-700 shadow-lg shadow-indigo-500/10">
+           {/* eslint-disable-next-line @next/next/no-img-element */}
+           <img
+            src="/profile.jpg"
+            alt="Kayla Scullin"
+            className="h-full w-full object-cover"
+          />
+           </div>
           </div>
+          <p className="subtle text-center">
+            Kayla Scullin JD, MA, MA, BA
+          </p>
         </div>
       </section>
 
       {/* KAYLA */}
-      <section id="kayla" className="section">
+      <section id="about" className="section">
         <div className="container grid gap-6">
-          <h2 className="h2">Kayla Scullin</h2>
+          <h2 className="h2">About Me</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="card p-6">
               <p className="subtle mb-2">Profile</p>
