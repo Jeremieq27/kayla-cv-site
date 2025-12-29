@@ -58,14 +58,16 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="card p-6">
               <p className="subtle mb-2">Profile</p>
-              <p>Short bio/statement. Add a couple of sentences describing focus, strengths, and impact.</p>
+              <p>I work at the intersection of art, history, and law, -drawn to the stories that objects/works/artifacts carry and the paths they take through time.  My background spans art history, archaeology, the art market, and most recently -intellectual property law.  What holds my attention the most are questions of provenance, authorship, and cultural responsibility -How meaning, ownership, and memory are protected and contested.  
+                I often dissapear into research tangents or creating.</p>
             </div>
             <div className="card p-6">
               <p className="subtle mb-2">Highlights</p>
-              <ul className="list-disc list-inside space-y-1">
-                <li>Key achievement or role</li>
-                <li>Domain expertise / tools</li>
-                <li>Recognition / award</li>
+              <ul className="list-disc list-inside space-y-3">
+                <li>New Enland Law · Concentrated Study: Intellectual Property Law Certificate</li>
+                <li>New Enland Law · Activities and Societies: Art and Fashion Law Society. Intellectual Property Law Association.
+                Study Abroad Program: Galway, Ireland · International Criminal Law and War Crimes</li>
+                <li>https://www.linkedin.com/in/kaylascullin/</li>
               </ul>
             </div>
           </div>
@@ -80,16 +82,20 @@ export default function Page() {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <p className="subtle mb-1">Education</p>
-                <ul className="space-y-2">
-                  <li><strong>Degree — Institution</strong> · Year</li>
-                  <li><strong>Degree — Institution</strong> · Year</li>
+                <ul className="space-y-5">
+                  <li><strong>New England Law · J.D.</strong> · 2021-2025</li>
+                  <li><strong>Sotheby's Institute of Art · M.A., Art Business</strong> · 2017-2018</li>
+                  <li><strong>King's College London · M.A., Classical Art And Archeology</strong> · 2016-2017</li>
+                  <li><strong>Pratt Institute · B.A., Art History and Cinema Studies</strong> · 2012-2015</li>
+                  <li><strong>Massachusetts College of Art and Design</strong> · 2009-2011</li>
                 </ul>
               </div>
               <div>
                 <p className="subtle mb-1">Experience</p>
-                <ul className="space-y-2">
-                  <li><strong>Role — Company</strong> · YYYY–YYYY</li>
-                  <li><strong>Role — Company</strong> · YYYY–YYYY</li>
+                <ul className="space-y-3">
+                  <li><strong>Looted Art Restitution Project · Researcher</strong> · 2025-Present</li>
+                  <li><strong>New England Law · Research Assistant</strong> · 2024-2025</li>
+                  <li><strong>Institute of Contemporary Art Boston · VA Lead</strong> · 2021-2024</li>
                 </ul>
               </div>
             </div>
@@ -110,8 +116,11 @@ export default function Page() {
             </div>
 
             <div className="card p-6">
-              <p className="subtle mb-2">Current Interests</p>
-              <p>Topical/academic interests that guide present work.</p>
+              <p className="subtle mb-4">Current Interests</p>
+              <p>Art Provenance</p>
+              <p>Baroque, Pop Surrealism, Art Nouveau</p>
+              <p>Running with my Partner or Puppy, Saoirse (She is a Carolina Husky mix)</p>
+              <p>Reading, Crocheting, Baking, Tinctures, Painting: Acrylic, Oil, Watercolor, and other mediums</p>
             </div>
           </div>
         </div>

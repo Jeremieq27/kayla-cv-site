@@ -28,6 +28,34 @@ type Pursuit = {
 // =====================
 const pursuitsSeed: Pursuit[] = [
   {
+    id: "Looted Art Restitution Project",
+    title: "Looted Art Restitution Project",
+    subtitle: "In progress",
+    shortDescription:
+      "This initiative involves the creation of a comprehensive database to collect all cases related to the restitution of artworks looted by the Nazis between 1933-1945 and to showcase them in an interactive manner.",
+    previewImage: {
+      src: "/pursuits/lootedArtResitutionProject1.jpeg",
+      alt: "Looted Art Restitution Project",
+    },
+    details: {
+      overview:
+        "I trace provenance disputes involving cultural property through fragmented legal, historical, and archival documentation. Cases within this project require careful factual reconstruction, disciplined synthesis across sources, and close attention to evidentiary gaps and inconsistencies.",
+      bullets: [
+        "Project Website: https://itsartlaw.org/resources/nazi_looted_art_cases/",
+        "Data Contextualization",
+        "Sourcing Data and Cross-Referencing Analysis",
+        "Central Contact Point: Comprehensive database",
+        "Interactive Visualization"
+
+      ],
+      nextSteps: [
+      ],
+      gallery: [
+        { src: "/pursuits/lootedArtRestitutionProject1.jpeg", alt: "Looted Art Restitution Project" }
+      ],
+    },
+  },
+  {
     id: "Victorian Cast Iron Restoration",
     title: "Victorian Cast Iron Restoration",
     subtitle: "In progress",
@@ -55,7 +83,8 @@ const pursuitsSeed: Pursuit[] = [
         { src: "/pursuits/castIronFernTable1.jpg", alt: "Cast Iron Fern Table" }
       ],
     },
-  },
+  }
+  
 ];
 
 // =====================
